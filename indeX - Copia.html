@@ -1,0 +1,233 @@
+<?    clearstatcache(); ?>
+<?php
+//echo $_SERVER['HTTP_REFERER'];
+
+//if (empty($_SERVER['HTTP_REFERER']) || $_SERVER['HTTP_REFERER'] !== 'http://127.0.0.1:8080/alcance/') {
+//  echo 'Acesso bloqueado';
+//exit;}
+?>
+
+
+<html>
+<head>
+<script src="f12.js"></script>
+ 
+<META HTTP-EQUIV="Expires" CONTENT="0">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache,must-revalidate">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Window-target" CONTENT="_top">
+<META HTTP-EQUIV="Set-Cookie"CONTENT="cookievalue=xxx;expires=Friday, 31-Dec-99 23:59:59 GMT; path="/"">
+
+<title>&#945;LCANCE</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body {
+font: arial;
+padding: 0px;
+margin: 0px;
+top: 0px;
+left: 0px;
+right: 0px;
+bottom: 0px;
+background-size: 100%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+
+background-image: linear-gradient(rgba(0,0,0,0.40) 0%, rgba(0,0,0,0.75) 100%), url(8.jpg);
+
+xbackground: linear-gradient(45deg, #1C1C1C, #4F4F4F, #1C1C1C, #1C1C1C); 
+xbox-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+table{
+font: 9pt arial;	
+}
+
+input {
+font: 18px arial;
+border-radius: 50px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 15px;
+  xbackground-color: #6495ED;
+  xborder: none;
+  xcolor: #FFFFFF;
+  text-align: right;
+  font: 12pt;
+  padding: 5px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+  vertical-align: middle;
+font-weight:bold; 
+box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+ content: '\00bb';
+
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 15px;
+}
+
+.button:hover span:after {
+  opacity: 10;
+  right: 0;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index:-3;
+  box-shadow: linear-gradient(rgba(0,0,0,0.40) 0%, rgba(0,0,0,0.75) 100%);
+}
+</style>
+<link rel="icon" type="image/x-icon" href="favicon2.png">
+<script>
+//function mostra(){ document.getElementById("qr1").style.display='block';}
+//function apaga(){ document.getElementById("qr1").style.display='none';}
+
+function resolucao(){
+var largura = innerWidth;
+var altura = innerHeight;
+resolucaoDIV.innerHTML= 'Resolução atual: '+largura+'x'+altura;
+//window.open('https://www.google.com/maps/d/viewer?mid=1eyHaUmgde3d_SB54TWCWEo4ScTZJweg&femb=1&ll=-23.52502067823825%2C-46.78413735321604&z=13','mapa');
+//qr1.style.display='block';
+//setTimeout("mostra()", 2000)
+//setTimeout("apaga()", 8000)
+//document.querySelector("resolucao").innerHTML = window.innerWidth;
+}
+</script>
+</head>
+
+
+<body oncontextmenu="return false;" onload="return resolucao();">  
+
+      
+<?/*<video autoplay muted loop id="myVideo"> <source src="beach.mp4" type="video/mp4">  Your browser does not support HTML5 video.</video>*/?>
+
+
+
+
+<div style="position:sticky;top:0;
+Xbox-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; ">
+
+<iframe name="cont1" width="100%" height="120" SRC="index_loga.php" frameBorder="0" scrolling="no" 
+Xstyle="box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;"></iframe></div>
+
+
+
+<div style="xposition:relative;bottom:0">
+<form action="http://172.20.15.152:8080/alcance/index_loga.php" target="cont2" METHOD="post">
+<input type="TEXT" name="userx" value="alcance">
+<input type="submit">
+</form>
+<iframe name="cont2" width="100%" height="85%" src="index_new.php" frameborder="0"></iframe>
+</div>
+
+
+
+<div id="qr" style="position: absolute; z-index:2;margin:80%;margin-top:-20%;display: none; width: 350;border-radius:25px">
+<table border=0>
+<tr>
+<td align="center" style="width:360px;background-color: snow; border-radius:25px">
+<img src="qrplus-code-1674733161019.jpg" title="Clique para esconder!" width="200" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;"></td>
+<td style="background-color: #efefef; color:darkblue;border-radius:20px">Pintou alguma dúvida???&nbsp;&nbsp;</td>
+</tr>
+<tr><td align="center" colspan=2 style="background-color: #efefef;border-radius:25px;color: black"><b><i>Entre em contato!</i></b></td></tr></table>
+</div>
+
+
+
+
+
+
+<div id="qr1" style="background: linear-gradient(45deg, #1C1C1C, #4F4F4F, #1C1C1C, #1C1C1C); border:2px solid red;position: absolute; z-index:2; margin-top:-20%;xmargin-left:-15%;display: none; width: 500px;border-radius:5px;">
+
+<b>CENTRAL ALCANCE!</b>
+
+
+<iframe src="inserir_mov_nova_func_msg.php" style="width:500px;height:350px" frameBorder="0" name="msg_chat" id="msg_chat" scrolling="no"></iframe><br>
+<a href="#" onclick="qr1.style.display='none'">MINIMIZAR</a></td>
+
+</div>
+
+
+
+
+<div style="position:sticky;bottom:0;background: linear-gradient(45deg, #1C1C1C, #4F4F4F, #1C1C1C, #1C1C1C); " >
+<table cellspacing="0" cellpadding="0" width="99.8%" border="0">
+<tr>
+<td VALIGN="bottom" align="left">
+<small title="SECRETARIA DE SAÚDE - MUNICÍPIO DE OSASCO - DIRETORIA GERAL DE ATENÇÃO BÁSICA">SS/ OSASCO/ DGAPS/ <A href="#" ONCLICK="window.open('ver_cad_equipe.php','cont2')" title="Idealização/ Elaboração e Desenvolvimento">ALCANCE</a>&nbsp;&nbsp;  2019 - <?echo date('Y');?>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span align="right" id="resolucaoDIV"></span></small>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+	
+  if (video.paused) {
+	myVideo.style.display='block';  
+    video.play();
+    btn.innerHTML = "TÁ BOM!";
+  } else {
+    video.pause();
+	myVideo.style.display='none';
+    btn.innerHTML = "RELAXAR";
+  }
+}
+</script>
+<button id="myBtn" onclick="myFunction();" style="display:none" ONMOUSEMOVE="this.innerHTML='Tá Bom!'" ONMOUSEout="this.innerHTML='...Relaxar!'">Relaxando...</button>
+</td>
+<td VALIGN="top" align="right">
+<a href="https://outlook.office365.com/owa/calendar/ALCANCEUTILIZAO@osasco.sp.gov.br/bookings/" TITLE="AGENDE UM HORÁRIO" target="_yout1">TREINAMENTO</img></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.youtube.com/@alcancedab" target="_yout"><img width="30px" height="15px" src="youtube-logo.png" title="Assista!"></img></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#" onclick="qr.style.display='block'" onmouseover="qr.style.display='block'" onmouseout="qr.style.display='none'"><img width="20px" src="zap.png" title="Fale conosco!"></img></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#" onclick="qr1.style.display='block'" ondblclick="qr1.style.display='none'"><img width="20px" src="fale_conosco.png" title="Fale conosco!"></img></a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+</td>
+</tr>
+</table>
+</div>
+
+
+
+
+
+
+</body>
+</html>
+
+<?php/*
+$dir1 = basename($_SERVER['PHP_SELF']);
+$filename = $dir1;
+if (file_exists($filename)) {
+    echo "<center><small><Versão de Script: " . date ("d/m/Y H:i:s", filemtime($filename))."</small></center>";
+}
+*/
+?>
